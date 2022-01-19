@@ -1,0 +1,21 @@
+<h1>Item Fantasma</h1>
+<hr>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <img src="./../../../assets/img/person.png">
+        <br> <br>
+        <a [routerLink]="['/items']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+    </div>
+
+    <div class="col-md-8">
+        <h3>Nombre Responsable - {{this.item.observacion}}</h3>
+        <hr>
+        <p>Cantidad de Items - {{this.item.cantidad_items}}</p>
+        <hr>
+        <p>Gráfica de Información Relevante</p>
+        <img src="{{this.item.img_src}}" style="width: 700px;">
+    </div>
+</div>
